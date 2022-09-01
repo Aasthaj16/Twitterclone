@@ -98,8 +98,8 @@ io.on("connection", (socket) => {
   })
 })
 
+const port = Process.env.PORT || 8080
 
-
-server.listen(Process.env.PORT || 8080, () => {
-  console.log("Server running at port 8080");
+server.listen(port, () => {
+  console.log("Server running at port " + port);
 });
